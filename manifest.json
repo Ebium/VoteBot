@@ -1,0 +1,39 @@
+{
+  "manifest_version": 2,
+  "name": "VoteBot",
+  "short_name":"VBT",
+  "version": "1.0",
+  "author":"Ebium",
+
+  "description": "VoteBot for Minecraft Server",
+
+  "icons": {
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png",
+    "128": "icons/icon-128.png"
+  },
+
+  "options_ui": {
+    "page": "options.html"
+  },
+
+  "permissions": ["storage"],
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.sydaria.fr/*"],
+      "js": ["VoteBot.js"]
+    }
+  ],
+
+  "web_accessible_resources": [
+		"options.html"
+	],
+  
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{4761792b-b26b-4c7b-86a1-0455fd476682}"
+    }
+  }
+}
