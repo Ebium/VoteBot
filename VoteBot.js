@@ -61,7 +61,7 @@ function vote(item){
         	}
         
 		else {
-			setTimeout(() => {  //attend 12 secondes avant de récup
+			setTimeout(() => {  //attend 15 secondes avant de récup
 				document.getElementsByClassName('btn-block get-reward')[0].click();
 			}, 15*1000)
 
